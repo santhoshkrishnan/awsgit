@@ -1,6 +1,3 @@
-Resources:
-  S3Bucket:
-    Type: AWS::S3::Bucket
-    Properties:
-      AccessControl: PublicRead
-      BucketName: sayit
+- s3_bucket:
+  name: mys3bucket
+  state: present
