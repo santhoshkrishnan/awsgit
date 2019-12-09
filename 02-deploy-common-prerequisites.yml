@@ -1,1 +1,6 @@
-02-deploy-common-prerequisites.yml
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: sayit
