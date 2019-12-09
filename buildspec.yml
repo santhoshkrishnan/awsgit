@@ -15,7 +15,7 @@ Phases:
       - yum -y install jq
   build:
     commands:
-      - export ORG="twe"
+      #- export ORG="twe"
       - cd ansible
-      - chmod +x inventory/aws_accounts.py
+      #- chmod +x inventory/aws_accounts.py
       - ansible-playbook 02-deploy-common-prerequisites.yml
