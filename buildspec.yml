@@ -15,13 +15,12 @@ Phases:
       - yum -y install jq
   build:
     commands:
+      # Create a simple s3 bucket
+       - s3_bucket:
+            name: mys3bucket
+            state: present
       #- export ORG="twe"
       #- cd ansible
       #- chmod +x inventory/aws_accounts.py
       #- ansible-playbook 02-deploy-common-prerequisites.yml
-      Resources:
-        S3Bucket:
-          Type: AWS::S3::Bucket
-          Properties:
-            AccessControl: PublicRead
-            BucketName: sayit
+      
