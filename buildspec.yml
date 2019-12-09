@@ -15,10 +15,9 @@ Phases:
       - yum -y install jq
   build:
     commands:
-      # Create a simple s3 bucket
-       - s3_bucket:
-            name: mys3bucket
-            state: present
+      - s3_bucket:
+        name: mys3bucket
+        state: present
       #- export ORG="twe"
       #- cd ansible
       #- chmod +x inventory/aws_accounts.py
