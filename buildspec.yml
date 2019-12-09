@@ -16,6 +16,6 @@ Phases:
   build:
     commands:
       #- export ORG="twe"
-      - cd ansible
+      #- cd ansible
       #- chmod +x inventory/aws_accounts.py
       - ansible-playbook 02-deploy-common-prerequisites.yml
