@@ -2,7 +2,7 @@ Version: 0.2
 Phases:
   install:
     runtime-versions:
-      python: 3.8
+      python: 2.7
   pre_build:
     commands:
       - pip3 install --upgrade pip
