@@ -2,7 +2,7 @@ Version: 0.2
 Phases:
   install:
     runtime-versions:
-      python: 2.7
+      python: 3.8
   pre_build:
     commands:
       - pip3 install --upgrade pip
@@ -17,7 +17,7 @@ Phases:
     commands:
       - cd ansible
       - chmod +x botos3.py
-      - python boto3.py
+      - python botos3.py
       #- s3 = boto3.client("s3")
       #- s3.create_bucket(Bucket='mybucket')
       #- echo "completed"
