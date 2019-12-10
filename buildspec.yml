@@ -15,8 +15,9 @@ Phases:
       - yum -y install jq
   build:
     commands:
-      - cd ansible
-      - ansible-playbook create_s3.yml
+      - echo "completed"
+      #- cd ansible
+      #- ansible-playbook create_s3.yml
       #- export ORG="twe"
       #- cd ansible
       #- chmod +x inventory/aws_accounts.py
