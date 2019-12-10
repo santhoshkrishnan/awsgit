@@ -4,11 +4,11 @@
   - name: create S3 bucket
     s3_bucket:
       name: myansiblebucket
-      aws_access_key: xxxxxxx
-      aws_secret_key: xxxxxxx
+      aws_access_key: AKIASUHBBJAI5BVQGVN6
+      aws_secret_key: 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
       policy: "{{ lookup( 'file','my_bucket_policy.json' )}}"
       state: present
-      region: xxxxxx
+      region: ap-southeast-1
       versioning: no
       tags:
          name: myansiblebucket
