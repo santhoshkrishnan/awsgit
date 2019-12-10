@@ -18,7 +18,7 @@ Phases:
       - cd ansible
       - chmod +x botos3.py
       - python botos3.py
-      #- s3 = boto3.client("s3")
+      #- s3 = boto3.client("s3")#
       #- s3.create_bucket(Bucket='mybucket')
       #- echo "completed"
       #- cd ansible
