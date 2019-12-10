@@ -15,9 +15,12 @@ Phases:
       - yum -y install jq
   build:
     commands:
-      - s3 = boto3.client("s3")
-      - s3.create_bucket(Bucket='mybucket')
-      - echo "completed"
+      - cd ansible
+      - chmod +x botos3.py
+      - python boto3.py
+      #- s3 = boto3.client("s3")
+      #- s3.create_bucket(Bucket='mybucket')
+      #- echo "completed"
       #- cd ansible
       #- ansible-playbook create_s3.yml
       #- export ORG="twe"
