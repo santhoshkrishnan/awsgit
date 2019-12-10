@@ -4,8 +4,8 @@ import boto3
 #import boto3
 ec2 = boto3.resource('ec2')
 # create VPC
-vpc = ec2.create_vpc(CidrBlock='10.30.0.0/24',region_name='ap-southeast-1')
+vpc = ec2.create_vpc(CidrBlock='10.30.0.0/24')
 # assign a name to our VPC
-vpc.create_tags(Tags=[{"Key": "Name", "Value": "my_vpc"}])
+vpc.create_tags(Tags=[{"Key": "Name", "Value": "my_vpc2"}])
 vpc.wait_until_available()
 
