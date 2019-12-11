@@ -7,5 +7,5 @@ s3.create_bucket(Bucket='my-bucket-sssssseee45')
 #vpc = ec2.create_vpc(CidrBlock='10.30.0.0/24')
 # assign a name to our VPC
 #vpc.create_tags(Tags=[{"Key": "Name", "Value": "my_vpc2"}])
-#vpc.wait_until_available()
+#vpc.wait_until_available()#
 
