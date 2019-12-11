@@ -1,13 +1,4 @@
----
-- hosts: localhost
-  tasks:
-  - name: create S3 bucket
-    s3_bucket:
-      name: myansiblebucket
-      #policy: "{{ lookup( 'file','my_bucket_policy.json' )}}"
-      state: present
-      region: ap-southeast-1
-      versioning: no
-      tags:
-         name: myansiblebucket
-         type: example
+# Create a simple s3 bucket
+- s3_bucket:
+    name: mys3bucket909093rrwrrrrrr
+    state: present
