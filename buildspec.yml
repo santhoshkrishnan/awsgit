@@ -16,10 +16,9 @@ Phases:
   build:
     commands:
       - cd ansible
-      - chmod +x botos3.py
-      - python botos3.py
-      #- s3 = boto3.client("s3")#
-      #- s3.create_bucket(Bucket='mybucket')
+      - ansible-playbook create_s3.yml
+      #- chmod +x botos3.py
+      #- python botos3.py
       #- echo "completed"
       #- cd ansible
       #- ansible-playbook create_s3.yml
