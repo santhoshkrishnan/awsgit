@@ -6,6 +6,6 @@ ec2 = boto3.resource('ec2',region_name='us-east-1')
 # create VPC
 vpc = ec2.create_vpc(CidrBlock='172.31.0.0/16')
 #assign a name to our VPC
-vpc.create_tags(Tags=[{"Key": "Name", "Value": "my_vpc4"}])
+vpc.create_tags(Tags=[{"Key": "Name", "Value": "my_vpc5"}])
 vpc.wait_until_available()
 ###
