@@ -25,5 +25,5 @@ Phases:
       #- export ORG="twe"
       #- cd ansible
       #- chmod +x inventory/aws_accounts.py
-      #- ansible-playbook 02-deploy-common-prerequisites.yml#
+      #- ansible-playbook 02-deploy-common-prerequisites.yml##
       
