@@ -11,6 +11,8 @@ Phases:
       - pip3 install boto
       - pip3 install boto3
       - yum clean all
+      - yum install curl
+      # new line
   build:
     commands:
       - cd ansible
