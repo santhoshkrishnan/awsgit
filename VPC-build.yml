@@ -11,8 +11,8 @@ Phases:
       - pip3 install boto
       - pip3 install boto3
       - yum clean all
-      - yum install curl
-      - yum install httpd
+      #- yum install curl
+      #- yum install httpd
       # new line
       #new branch created
   build:
